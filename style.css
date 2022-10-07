@@ -27,7 +27,8 @@ body{
 }
 #url{
     font-size: 1em;
-    width: 30vw;
+    width: 100%;
+    position: relative;
     padding: 0.6em;
     border-radius: 1em;
     border: 0px;
@@ -36,7 +37,7 @@ body{
 #submitbtn{
     border: 0px;
     font-size: 1em;
-    width: 10vw;
+    width: fit-content;
     padding: 0.6em;
     border-radius: 1em;
     background-color: #395B64;
@@ -63,6 +64,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .content{
@@ -70,6 +72,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
    padding-left: 15vw;
    padding-right: 15vw;
    padding-top: 1em;
