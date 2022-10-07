@@ -91,7 +91,15 @@ body{
     border-radius: 0.4em;
     padding: 0.5em;
 }
-
+.container {
+    text-align: center;
+  }
+  
+  ol.myOL {
+    display: inline-block;
+    text-align: left;
+  }
+  
 .flag_title{
    background-color: #395B64;
    color: #E7F6F2;
