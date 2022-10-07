@@ -2,6 +2,9 @@
 
 
 
+
+
+
 document.getElementById('submitbtn').addEventListener('click', function(){
   console.log(document.getElementById('url').value)
 
@@ -22,8 +25,8 @@ document.querySelector('.image').innerHTML = `
 `
 document.querySelector('.page_title').innerHTML = `${json.title}`
 document.querySelector('.discription').innerHTML = `${json.description}`
-document.querySelector('.url_flag').innerHTML = `${json.content_urls.desktop.page}`
-document.querySelector('.url_flag').href = `${json.content_urls.desktop.page}`
+document.querySelector('.flag_title').innerHTML = `Page URL | ${json.content_urls.desktop.page}`
+document.querySelector('.flag_title').href = `${json.content_urls.desktop.page}`
 document.querySelector('.article').innerHTML = `${json.extract_html}`
 
 document.querySelector('.content').style.visibility = 'visible'
@@ -32,6 +35,10 @@ document.querySelector('.content').style.visibility = 'visible'
 
 })
 
+
+
+
+//https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
 
 
 
