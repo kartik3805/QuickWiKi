@@ -160,6 +160,12 @@ body{
 .content{
     visibility: hidden;
 }
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
     .header1{
