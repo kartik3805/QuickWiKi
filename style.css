@@ -65,6 +65,13 @@ body{
     justify-content: center;
 }
 
+#error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -176,33 +183,3 @@ a:hover {
     }
 
   }
-.not-found {
-    visibility: hidden;
-}
-
-.not-found h1 {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-.not-found h2 {
-    font-size: 25px;
-    text-align: center;
-    color: #2C3333;
-    font-family: 'Roboto', sans-serif;
-    /* margin-top:-40px; */
-}
-
-.not-found p {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-}
-
-.not-found .container {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 15%;
-}
