@@ -10,6 +10,7 @@ body{
     background-color: #E7F6F2;    
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-size: 16px;
+    height: 100vh;
 }
 
 .title{
@@ -169,6 +170,13 @@ a:hover {
     text-decoration: none;
 }
 
+.container {
+    position: absolute;
+    top: 45%;
+    left:50%
+    transform: translate(-45%, -50%);
+}
+
 @media only screen and (max-width: 1100px) {
     .content{
         margin: 1rem auto;
@@ -186,6 +194,15 @@ a:hover {
     #url {
         width: 40%;
         margin-bottom: 0.5rem;
+    }
+    #submitbtn , #url {
+        margin-bottom: 0.5rem;
+    }
+    .container {
+        position: absolute;
+        top: 20%;
+        left:50%
+        transform: translate(-20%, -50%);
     }
 }
 
