@@ -1,3 +1,5 @@
+// document.getElementById('url').value = "https://en.wikipedia.org/wiki/Shiv_Smarak"
+// document.querySelector('.content').style.visibility = 'visible'
 document.getElementById('submitbtn').addEventListener('click', function () {
     console.log(document.getElementById('url').value)
 
@@ -28,19 +30,17 @@ document.getElementById('submitbtn').addEventListener('click', function () {
                 // console.log(json)
                 try {
                     document.querySelector('.image').innerHTML = `<img src="${json.thumbnail.source}" alt="">`
-                    document.querySelector('.page_title').innerHTML = `${json.title}`
-                    document.querySelector('.discription').innerHTML = `${json.description}`
-                    document.querySelector('.url_flag').innerHTML = `${json.content_urls.desktop.page}`
-                    document.querySelector('.url_flag').href = `${json.content_urls.desktop.page}`
-                    document.querySelector('.article').innerHTML = `${json.extract_html}`
-                    document.querySelector('.not-found').style.visibility = 'hidden'
-
-                    document.querySelector('.content').style.visibility = 'visible'
-                } catch (error) {
-                    document.querySelector('.content').style.visibility = 'hidden'
-                    document.querySelector('.not-found').style.visibility = 'visible'
-
+                } catch (e) {
+                    console.log(e)
                 }
+                document.querySelector('.page_title').innerHTML = `${json.title}`
+                document.querySelector('.discription').innerHTML = `${json.description}`
+                document.querySelector('.url_flag').innerHTML = `${json.content_urls.desktop.page}`
+                document.querySelector('.url_flag').href = `${json.content_urls.desktop.page}`
+                document.querySelector('.article').innerHTML = `${json.extract_html}`
+                document.querySelector('.not-found').style.visibility = 'hidden'
+                document.querySelector('.content').style.visibility = 'visible'
+
             })
     } else {
         document.querySelector('.content').style.visibility = 'hidden'
