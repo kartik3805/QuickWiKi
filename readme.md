@@ -16,3 +16,7 @@ When I was reading a wikipedia article I felt a need for a short summary of arti
 ## API
 
 Article data is derived from official wikipedia api : https://en.wikipedia.org/api/rest_v/
+
+## Deployment
+
+Web version is currently deployed on netlify, URL: https://quickwiki.netlify.app/
