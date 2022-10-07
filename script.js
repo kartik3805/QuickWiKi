@@ -1,3 +1,9 @@
+document.getElementById("url").addEventListener("keyup", function (event) {
+  if(event.code === 'Enter' || event.keyCode === 13){
+    document.getElementById('submitbtn').click()
+  }
+});
+
 document.getElementById("submitbtn").addEventListener("click", function () {
   console.log(document.getElementById("url").value);
 
