@@ -27,7 +27,7 @@ body{
 }
 #url{
     font-size: 1em;
-    width: 30vw;
+    width: 100%;
     padding: 0.6em;
     border-radius: 1em;
     border: 0px;
@@ -36,7 +36,7 @@ body{
 #submitbtn{
     border: 0px;
     font-size: 1em;
-    width: 10vw;
+    width: 100%;
     padding: 0.6em;
     border-radius: 1em;
     background-color: #395B64;
