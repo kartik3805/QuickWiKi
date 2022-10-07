@@ -42,7 +42,13 @@ body{
     background-color: #395B64;
     color: #E7F6F2;
     cursor: pointer;
-
+    display:block;
+    width:18%;
+    margin-left: 1rem;
+}
+#submitbtn:hover{
+    font-weight: bold;
+    box-shadow: #373737 0 0 0 3px, transparent 0 0 0 0;
 }
 .header{
     background-color: #2C3333;
@@ -53,7 +59,6 @@ body{
 
 
 .search{
-
     display: flex;
     align-items: center;
     justify-content: center;
