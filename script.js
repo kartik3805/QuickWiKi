@@ -5,7 +5,11 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 
   console.log(inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, ""));
   let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
-
+if (pagetitle == ""){
+  document.getElementById("error").textContent =
+        "Please Enter a link!";
+        return;
+}
   fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + pagetitle)
     .then(function (response) {
       if (response.status === 404) {
