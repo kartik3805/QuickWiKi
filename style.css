@@ -27,7 +27,7 @@ body{
 }
 #url{
     font-size: 1em;
-    width: 100%;
+    width: 30vw;
     padding: 0.6em;
     border-radius: 1em;
     border: 0px;
@@ -36,14 +36,13 @@ body{
 #submitbtn{
     border: 0px;
     font-size: 1em;
-    width: 100%;
+    width: 10vw;
     padding: 0.6em;
     border-radius: 1em;
     background-color: #395B64;
     color: #E7F6F2;
     cursor: pointer;
     display:block;
-    width:18%;
     margin-left: 1rem;
 }
 #submitbtn:hover{
@@ -75,9 +74,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   padding-left: 15vw;
-   padding-right: 15vw;
-   padding-top: 1em;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 1em;
 }
 
 .page_title{
@@ -179,5 +178,10 @@ a:hover {
     .image{
         width: 100%;
     }
-
+    #url{
+        width: 100%;
+    }
+    #submitbtn{
+        width: 40%; 
+    }
   }
