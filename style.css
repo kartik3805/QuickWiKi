@@ -43,6 +43,13 @@ body{
     background-color: #395B64;
     color: #E7F6F2;
     cursor: pointer;
+     margin-left:0.6rem;
+    transition: transform .4s;
+}
+#submitbtn:hover{
+	background-color: transparent;
+    border: 2px solid  #395B64;
+	cursor: pointer;
 }
 
 .header{
