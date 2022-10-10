@@ -99,6 +99,15 @@ body{
    flex: 1;
 }
 
+.container {
+    text-align: center;
+  }
+  
+  ol.myOL {
+    display: inline-block;
+    text-align: left;
+}
+  
 .discription {
     margin: 0.3rem;
 }
