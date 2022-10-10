@@ -13,13 +13,34 @@
 <body>
     <div class="header">
         <div><a href="./index.html" class="title">Quick<span>Wiki</span></a></div>
-    </div>
-    <div class="search">
-        <input type="text" id="url" placeholder="Paste your URL here">
-        <input id="submitbtn" type="submit" value="Submit">
-    </div>
-    <p class="moto">Get quick and short summary for your desired wikipedia article</p>
-
+     </div>
+     <div class="search">
+         <input type="text" id="url" placeholder="Paste your URL here">
+         <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()" >
+         <script>
+             function hideFunction() {
+               var x = document.getElementById("steps");
+               let n =0;
+               if (n!=0) {
+                 x.style.display = "block";
+               } else {
+                 x.style.display = "none";
+                 n++;
+               }
+             }
+             </script>
+     </div>
+     <div class="container" id="steps">
+        <!-- <h4>Steps:</h4> -->
+        <p class="moto">Get quick and short summary for your desired wikipedia article</p>
+        <ol class="myOL">
+          <li>Copy the URL of your desired WikiPedia Page.</li>
+          <li>Paste the URL in the box above.</li>
+          <li>Click on the submit button.</li>
+          <li>Get the Summary of the WikiPedia Page in an instant</li>
+        </ol>
+      </div>
+      
     <p id="error"></p>
 
     <div class="content">
