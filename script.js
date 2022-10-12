@@ -19,6 +19,7 @@ if (pagetitle == ""){
         "Please Enter a link!";
         return;
 }
+
   fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + pagetitle)
     .then(function (response) {
       if (response.status === 404) {
@@ -52,6 +53,10 @@ if (pagetitle == ""){
       document.querySelector(".article").innerHTML = `${json.extract_html}`;
 
       document.querySelector(".content").style.visibility = "visible";
+      
+        const container = document.querySelector('.center-container');
+        container.style.position = "static";
+        container.style.transform = "unset";
     })
     .catch((err) => {
       console.log(err);

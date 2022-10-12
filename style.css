@@ -103,6 +103,14 @@ body{
     text-align: center;
   }
   
+  .center-container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
   ol.myOL {
     display: inline-block;
     text-align: left;
