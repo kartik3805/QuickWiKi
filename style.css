@@ -50,13 +50,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 2cm;
 }
-
+.header a span{
+    text-decoration: underline;
+}
 
 .search{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 4cm;
 }
 
 .moto{
@@ -101,11 +105,14 @@ body{
 
 .container {
     text-align: center;
+    padding-top: 5px ;
+
   }
   
   ol.myOL {
     display: inline-block;
     text-align: left;
+    font-size: larger;
 }
   
 .discription {
@@ -209,4 +216,14 @@ a:hover {
     .url_flag{
         word-break: break-all;
     }
+}
+
+.moto{
+    margin-bottom: 0.3cm;\
+}
+.moto:hover{
+    text-decoration: underline;
+}
+li:hover{
+    text-decoration: underline;
 }
