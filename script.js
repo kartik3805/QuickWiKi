@@ -42,6 +42,8 @@ if (pagetitle == ""){
           ".image"
         ).innerHTML = `<img src="images/no-thumbnail.jpg" height="320" alt="">`;
       }
+      
+      document.querySelector('.content').style.display = "block";
       document.querySelector(".page_title").innerHTML = `${json.title}`;
       document.querySelector(".discription").innerHTML = `${json.description}`;
       document.querySelector(
@@ -62,6 +64,7 @@ if (pagetitle == ""){
       console.log(err);
       document.getElementById("error").textContent =
         "Oops! That article doesn't exist!";
+      document.querySelector('.content').style.display = "none";
     });
 });
 
