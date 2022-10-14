@@ -7,9 +7,9 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #E7F6F2;    
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: #d7d7d7;    
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title{
@@ -17,7 +17,12 @@ body{
     padding: 0.3em;
     font-size: 1.8em;
 }
-
+.icons{
+    position: relative;
+    bottom: 12px;
+    text-align: center;
+    color: #2C3333;
+}
 .title span{
     color: #A5C9CA;
     font-weight: 600;
@@ -32,6 +37,7 @@ body{
     padding: 0.6em;
     border-radius: 1em;
     border: 0px;
+    margin-left: 5px;
 }
 
 #submitbtn{
@@ -43,6 +49,7 @@ body{
     background-color: #395B64;
     color: #E7F6F2;
     cursor: pointer;
+    margin-left: 8px;
 }
 
 .header{
@@ -50,6 +57,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    font-size:xx-large;
 }
 
 
@@ -57,6 +66,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .moto{
@@ -116,6 +126,7 @@ body{
   ol.myOL {
     display: inline-block;
     text-align: left;
+    line-height: 2em;
 }
   
 .discription {
@@ -187,6 +198,11 @@ a:link {
 a:hover {
     text-decoration: none;
 }
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
 
 @media only screen and (max-width: 1100px) {
     .content{

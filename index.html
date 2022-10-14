@@ -7,17 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/bf1edbf89d.js" crossorigin="anonymous"></script>
     <title>QuickWiKi</title>
 </head>
 
 <body>
     <div class="header">
-        <div><a href="./index.html" class="title">Quick<span>Wiki</span></a></div>
+        <div><a href="./index.html" class="title">Quick<span style="color: aqua;">Wiki</span></a></div>
      </div>
      <div class="center-container">
+     
+    <div class="icons">
+        <i class="fa-brands fa-searchengin fa-10x"></i>
+    </div>
 
      <div class="search">
-         <input type="text" id="url" placeholder="Paste your URL here">
+         <input type="text" id="url" placeholder="  Paste your URL here">
          <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()" >
          <script>
              function hideFunction() {

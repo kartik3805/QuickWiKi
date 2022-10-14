@@ -69,4 +69,14 @@ if (pagetitle == ""){
 });
 
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
+document.querySelector("#submitbtn").addEventListener("click",function(e){
+    buttonAnimation(e.currentTarget);
+});
+
+function buttonAnimation(currentKey){
+  currentKey.classList.add("pressed");
+  setTimeout(function(){
+    currentKey.classList.remove("pressed");
+  },100);
+}
 
