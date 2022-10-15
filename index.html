@@ -7,47 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>QuickWiKi</title>
 </head>
 
 <body>
     <div class="header">
         <div><a href="./index.html" class="title">Quick<span>Wiki</span></a></div>
-     </div>
-     <div class="center-container">
+    </div>
 
-     <div class="search">
-         <input type="text" id="url" placeholder="Paste your URL here">
-         <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()" >
-         <script>
-             function hideFunction() {
-               var x = document.getElementById("steps");
-               let n =0;
-               if (n!=0) {
-                 x.style.display = "block";
-               } else {
-                 x.style.display = "none";
-                 n++;
-               }
-             }
-             </script>
-     </div>
-     <div class="container" id="steps">
-        <!-- <h4>Steps:</h4> -->
-        <p class="moto">Get quick and short summary for your desired wikipedia article</p>
-        <ol class="myOL">
-          <li>Copy the URL of your desired WikiPedia Page.</li>
-          <li>Paste the URL in the box above.</li>
-          <li>Click on the submit button.</li>
-          <li>Get the Summary of the WikiPedia Page in an instant</li>
-        </ol>
-      </div>
-      
-    <p id="error"></p>
+    <div class="center-container">
 
-</div>
+        <div class="search">
+            <input type="text" id="url" placeholder="Paste your URL here">
+            <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()">
+            <script>
+                function hideFunction() {
+                    var x = document.getElementById("steps");
+                    let n = 0;
+                    if (n != 0) {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                        n++;
+                    }
+                }
+            </script>
+        </div>
+        <div class="container" id="steps">
+            <!-- <h4>Steps:</h4> -->
+            <p class="moto">Get quick and short summary for your desired wikipedia article</p>
+            <ol class="myOL">
+                <li>Copy the URL of your desired WikiPedia Page.</li>
+                <li>Paste the URL in the box above.</li>
+                <li>Click on the submit button.</li>
+                <li>Get the Summary of the WikiPedia Page in an instant</li>
+            </ol>
+        </div>
 
 
+        <p id="error"></p>
+
+    </div>
     <div class="content">
 
         <div class="header1">
@@ -79,6 +80,15 @@
         </div>
 
 
+    </div>
+    <div class="footer">
+        <p class="footer-credit">Copyright © 2022 QuickWiKi, All Rights Reserved </p>
+        &nbsp;
+        <div class="github">
+            <p> <a href="https://github.com/kartik3805/QuickWiKi">
+                    <i class="fa fa-github" aria-hidden="true">
+                    </i></a></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
