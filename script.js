@@ -1,6 +1,6 @@
 
 document.getElementById("url").addEventListener("keyup", function (event) {
-  if(event.code === 'Enter' || event.keyCode === 13){
+  if(event.code === 'Enter' || event.key === 'Enter'){
     document.getElementById('submitbtn').click()
   }
 });
