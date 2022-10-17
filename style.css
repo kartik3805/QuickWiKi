@@ -197,6 +197,7 @@ body{
 
 .article{
     margin: 0.8rem 0;
+    padding: 36px;
 }
 
 .article p {
