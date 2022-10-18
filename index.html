@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,13 @@
 </head>
 
 <body>
+<!--Header-->
     <div class="header">
         <div><a href="./index.html" class="title">Quick<span>Wiki</span></a></div>
     </div>
 
     <div class="center-container">
-
+<!--Search Option-->
         <div class="search">
             <input type="text" id="url" placeholder="Paste your URL here">
             <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()">
@@ -34,6 +35,7 @@
                 }
             </script>
         </div>
+<!--Summary-->
         <div class="container" id="steps">
             <!-- <h4>Steps:</h4> -->
             <p class="moto">Get quick and short summary for your desired wikipedia article</p>
@@ -56,14 +58,16 @@
                 <div class="page_title">Apple Inc.</div>
                 <div class="flags discription">American multinational technology company</div>
                 <div class="pageurl">
-                    <h4 class="flag_title">Page URL |</h4>
+                    <!--<h4 class="flag_title">Page URL |</h4>-->
+                    <button class="btn-page-url">Page URL |</button>
                     <div class="flags url">
                         <a class="url_flag" target="_blank"
                             href="https://en.wikipedia.org/wiki/Apple_Inc.">https://en.wikipedia.org/wiki/Apple_Inc.</a>
                     </div>
                 </div>
             </div>
-            <div class="image">
+<!--Image -->
+            <div class="image zoom">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Apple_Park_2022.jpg/320px-Apple_Park_2022.jpg"
                     alt="">
             </div>

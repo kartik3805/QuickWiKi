@@ -42,6 +42,7 @@ body{
     font-size: 1rem;
     width: 100px;
     padding: 0.6rem;
+    margin-left: 20px;
     border-radius: 1rem;
     background-color: #395B64;
     color: #E7F6F2;
@@ -123,6 +124,14 @@ body{
    border-radius: 0.4em;
    padding: 0.5em;
    flex: 1;
+   width: 1px;
+}
+.btn-page-url{
+   background-color: #395B64;
+   color: #E7F6F2;
+   border-radius: 0.4em;
+   padding: 0.5em;
+   /*flex: 1;*/
 }
 
 .container {
@@ -169,12 +178,15 @@ body{
     background-color: #A5C9CA;
     border-radius: 0.5rem;
     flex-wrap: wrap;
+    height: 12rem;
 }
 
 .image{
     display: flex;
     justify-content: center;
     flex: 1;
+    height: 10rem;
+    margin-top: 1rem;
 }
 
 .image img{
@@ -187,6 +199,9 @@ body{
     border-radius: 0.5rem;
     padding: 0.5rem;
     flex: 1;
+    height: 9rem;
+    margin-top: 25px;
+    margin-left: 60px;
 }
 
 .extract{
@@ -211,6 +226,17 @@ a:link {
 }
 a:hover {
     text-decoration: none;
+}
+
+/*Image Hovering*/
+.zoom {
+    transition: transform .2s;
+    cursor: pointer;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 
 @media only screen and (max-width: 1100px) {
