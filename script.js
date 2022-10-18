@@ -1,13 +1,11 @@
-
-document.getElementById("url").addEventListener("keyup", function (event) {
-  if(event.code === 'Enter' || event.keyCode === 13){
-    document.getElementById('submitbtn').click()
-  }
-});
-
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
 
 document.getElementById("submitbtn").addEventListener("click", function () {
+  
+  if(event.code === 'Enter' || event.keyCode === 13){
+    document.getElementById('submitbtn').click()
+  }
+  
   console.log(document.getElementById("url").value);
 
   let inputurl = document.getElementById("url").value;
