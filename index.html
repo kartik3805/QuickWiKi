@@ -17,8 +17,21 @@
     </div>
 
     <div class="center-container">
+            <!-- Alert message badge starts */ -->
+
+        <div>
+                <div class="alert hideit" id="showalert">
+                <span class="closebtn" onclick="closethealert()">&times;</span> 
+                <strong class="alertmessage">Input field are null Please enter the some text in input field.</strong>
+                </div>
+        </div>  
+            <!-- Alert message badge ends */ -->
+        
 
         <div class="search">
+            
+
+    
             <input type="text" id="url" placeholder="Paste your URL here">
             <input id="submitbtn" type="submit" value="Submit" onclick="hideFunction()">
             <script>
@@ -33,6 +46,9 @@
                     }
                 }
             </script>
+
+
+
         </div>
         <div class="container" id="steps">
             <!-- <h4>Steps:</h4> -->

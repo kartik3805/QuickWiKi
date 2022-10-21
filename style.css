@@ -245,3 +245,34 @@ a:hover {
         word-break: break-all;
     }
 }
+/* Changes done by Siddhesh172004 */
+/* Alert code starts  */
+.alert {
+    padding: 10px;
+    background-color: #395B64;
+    color: rgb(255, 255, 255);
+    width: 30%;
+   margin: auto;
+  }
+.hideit{
+    display: none;
+}
+.showalert{
+    display: block;
+}  
+  .closebtn {
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+/* Alert code ends  */
+/* Changes done by Siddhesh172004 */
