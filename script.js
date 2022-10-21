@@ -1,14 +1,10 @@
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
 
-const searchBar = document.getElementById("url");
-
-searchBar.addEventListener("keyup", (event) => {
+document.getElementById("submitbtn").addEventListener("click", function () {
 	if (event.code === "Enter" || event.keyCode === 13) {
 		document.getElementById("submitbtn").click();
 	}
-});
 
-document.getElementById("submitbtn").addEventListener("click", function () {
 	console.log(document.getElementById("url").value);
 
 	let inputurl = document.getElementById("url").value;
@@ -16,7 +12,10 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 	console.log(inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, ""));
 	let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
 	if (pagetitle == "") {
-		document.getElementById("error").textContent = "Please Enter a link!";
+		// document.getElementById("error").textContent =
+		//       "Please Enter a link!";
+		alertmessage("Please Enter a link!");
+
 		return;
 	}
 
@@ -25,7 +24,9 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 			if (response.status === 404) {
 				throw new Error();
 			}
-			document.getElementById("error").textContent = "";
+			// document.getElementById("error").textContent = "";
+			alertmessage("Error");
+
 			return response.json();
 		})
 		.then(function (json) {
@@ -62,10 +63,38 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 		})
 		.catch((err) => {
 			console.log(err);
-			document.getElementById("error").textContent =
-				"Oops! That article doesn't exist!";
-			document.querySelector(".content").style.display = "none";
+			// document.getElementById("error").textContent =
+			//   "Oops! That article doesn't exist!";
+
+			// document.querySelector('.content').style.display = "none";
+			alertmessage("Oops! That article does not exist");
 		});
 });
+
+// * Changes done by Siddhesh172004 */
+// Alert messgae code starts
+function alertmessage(message) {
+	var showalert = document.getElementById("showalert");
+	const collection = document.getElementsByClassName("alertmessage");
+	collection[0].innerHTML = message;
+	showalert.classList.remove("hide");
+	showalert.classList.add("showalert");
+	console.log(message);
+
+	return 0;
+}
+
+// to close the alert badge starts
+
+function closethealert() {
+	var showalert = document.getElementById("showalert");
+
+	showalert.classList.remove("showalert");
+	showalert.classList.add("hideit");
+}
+// to close the alert badge ends
+
+// Alert messgae code ends
+/* Changes done by Siddhesh172004 */
 
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
