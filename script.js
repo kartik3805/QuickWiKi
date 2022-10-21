@@ -1,15 +1,16 @@
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
 
-document.getElementById("submitbtn").addEventListener("click", function () {
+const searchBar = document.getElementById("url");
+
+searchBar.addEventListener("keyup", (event) => {
 	if (event.code === "Enter" || event.keyCode === 13) {
 		document.getElementById("submitbtn").click();
 	}
+});
 
-	console.log(document.getElementById("url").value);
-
+document.getElementById("submitbtn").addEventListener("click", function () {
 	let inputurl = document.getElementById("url").value;
 
-	console.log(inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, ""));
 	let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
 	if (pagetitle == "") {
 		// document.getElementById("error").textContent =
