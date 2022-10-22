@@ -12,6 +12,7 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 	let inputurl = document.getElementById("url").value;
 
 	let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
+
 	if (pagetitle == "") {
 		// document.getElementById("error").textContent =
 		//       "Please Enter a link!";
@@ -23,10 +24,10 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 	fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + pagetitle)
 		.then(function (response) {
 			if (response.status === 404) {
+				alertmessage("Error");
 				throw new Error();
 			}
 			// document.getElementById("error").textContent = "";
-			alertmessage("Error");
 
 			return response.json();
 		})
