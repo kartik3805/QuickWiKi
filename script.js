@@ -26,7 +26,7 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 				throw new Error();
 			}
 			// document.getElementById("error").textContent = "";
-			alertmessage("Error");
+			//alertmessage("Error");
 
 			return response.json();
 		})
