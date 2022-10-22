@@ -112,12 +112,14 @@ body {
 }
 
 .flags {
-	background-color: #a5c9ca;
+	background-color: #82aaac;
 	border-radius: 0.4rem;
 	padding: 0.5rem;
+	text-align: center;
 }
 
 .flag_title {
+	margin-left: 5px;
 	background-color: #395b64;
 	color: #e7f6f2;
 	border-radius: 0.4em;
@@ -160,21 +162,24 @@ ol.myOL {
 
 .pageurl {
 	display: flex;
-	align-items: center;
-	margin: 0.3rem;
+	flex-direction: column;
+	justify-content: center;
+	margin: 3px;
+	text-align: center;
 }
 
 .header1 {
 	display: flex;
+	flex-direction: row;
 	background-color: #a5c9ca;
 	border-radius: 0.5rem;
-	flex-wrap: wrap;
 }
 
 .image {
 	display: flex;
 	justify-content: center;
 	flex: 1;
+	padding-bottom: 10px;
 }
 
 .image img {
@@ -182,13 +187,15 @@ ol.myOL {
 }
 
 .shortcontent {
-	background-color: #e7f6f2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #a5c9ca;
 	margin: 0.3rem;
-	border-radius: 0.5rem;
-	padding: 0.5rem;
-	flex: 1;
+	border-radius: 0.2em;
+	padding: 0;
 }
-
+/* #e7f6f2 */
 .extract {
 	background-color: #a5c9ca;
 	font-size: 1.2rem;
