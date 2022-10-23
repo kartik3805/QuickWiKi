@@ -45,6 +45,7 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 					".image"
 				).innerHTML = `<img src="images/no-thumbnail.jpg" height="320" alt="">`;
 			}
+      closethealert()
 
 			document.querySelector(".content").style.display = "block";
 			document.querySelector(".page_title").innerHTML = `${json.title}`;
@@ -69,13 +70,14 @@ document.getElementById("submitbtn").addEventListener("click", function () {
 			//   "Oops! That article doesn't exist!";
 
 			// document.querySelector('.content').style.display = "none";
-			alertmessage("Oops! That article does not exist");
+			alertmessage( 'Oops! "' +  inputurl +  '" does not exist');
 		});
 });
 
 // * Changes done by Siddhesh172004 */
 // Alert messgae code starts
 function alertmessage(message) {
+
 	var showalert = document.getElementById("showalert");
 	const collection = document.getElementsByClassName("alertmessage");
 	collection[0].innerHTML = message;

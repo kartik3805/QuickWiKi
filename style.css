@@ -46,6 +46,7 @@ body {
 	background-color: #395b64;
 	color: #e7f6f2;
 	cursor: pointer;
+	margin-left: 0.8em;
 }
 
 .header {
@@ -277,3 +278,15 @@ a:hover {
 }
 /* Alert code ends  */
 /* Changes done by Siddhesh172004 */
+
+
+/*Image Hovering*/
+.zoom {
+    transition: transform .2s;
+    cursor: pointer;
+}
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
