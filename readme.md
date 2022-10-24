@@ -1,4 +1,3 @@
-
 # QuickWiKi
 
 Get a quick and short summary for any wikipedia article in seconds
@@ -15,7 +14,7 @@ When I was reading a wikipedia article I felt a need for a short summary of arti
 
 ## API
 
-Article data is derived from official wikipedia api : https://en.wikipedia.org/api/rest_v/
+Article data is derived from official wikipedia api : https://en.wikipedia.org/api/rest_v1/
 
 ## Deployment
 
