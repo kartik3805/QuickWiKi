@@ -74,11 +74,16 @@ body {
 	display: inline-flex;
 	flex-direction: column;
 	justify-content: center;
-	font-size: 30px;
+	font-size: 30px; 
 }
 .github:hover {
 	opacity: 0.8;
 }
+
+.fa-github {
+	color: white;
+}
+
 .search {
 	display: flex;
 	align-items: center;
