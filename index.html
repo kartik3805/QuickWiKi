@@ -1,131 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="icon" href="images/favicon.ico" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<title>QuickWiKi</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>QuickWiKi</title>
+  </head>
 
-	<body>
-		<div class="header">
-			<div>
-				<a href="./index.html" class="title">Quick<span>Wiki</span></a>
-			</div>
-		</div>
+  <body>
+    <div class="header">
+      <div>
+        <img src="images/favicon.ico" height="50px" />
+        <a href="./index.html" class="title"
+          ><span class="Q">Q</span>uick<span class="wiki">Wiki</span></a
+        >
+      </div>
+    </div>
 
-		<div class="center-container">
-			<!-- Alert message badge starts */ -->
+    <div class="center-container">
+      <!-- Alert message badge starts */ -->
 
-			<div>
-				<div class="alert hideit" id="showalert">
-					<span class="closebtn" onclick="closethealert()">&times;</span>
-					<strong class="alertmessage"
-						>Input field are null Please enter the some text in input
-						field.</strong
-					>
-				</div>
-			</div>
-			<!-- Alert message badge ends */ -->
+      <div>
+        <div class="alert hideit" id="showalert">
+          <span class="closebtn" onclick="closethealert()">&times;</span>
+          <strong class="alertmessage"
+            >Input field are null Please enter the some text in input
+            field.</strong
+          >
+        </div>
+      </div>
+      <!-- Alert message badge ends */ -->
 
-			<div class="search">
-				<input type="text" id="url" placeholder="Paste your URL here" />
-				<input
-					id="submitbtn"
-					type="submit"
-					value="Submit"
-					onclick="hideFunction()"
-				/>
-				<script>
-					function hideFunction() {
-						var x = document.getElementById("steps");
-						let n = 0;
-						if (n != 0) {
-							x.style.display = "block";
-						} else {
-							x.style.display = "none";
-							n++;
-						}
-					}
-				</script>
-			</div>
-			<div class="container" id="steps">
-				<!-- <h4>Steps:</h4> -->
-				<p class="moto">
-					Get quick and short summary for your desired wikipedia article
-				</p>
-				<ol class="myOL">
-					<li>Copy the URL of your desired WikiPedia Page.</li>
-					<li>Paste the URL in the box above.</li>
-					<li>Click on the submit button.</li>
-					<li>Get the Summary of the WikiPedia Page in an instant</li>
-				</ol>
-			</div>
+      <div class="search">
+        <input type="text" id="url" placeholder="Paste your URL here" />
+        <input
+          id="submitbtn"
+          type="submit"
+          value="Submit"
+          onclick="hideFunction()"
+        />
+        <script>
+          function hideFunction() {
+            var x = document.getElementById("steps");
+            let n = 0;
+            if (n != 0) {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+              n++;
+            }
+          }
+        </script>
+      </div>
+      <div class="container" id="steps">
+        <!-- <h4>Steps:</h4> -->
+        <p class="moto">
+          Get quick and short summary for your desired wikipedia article
+        </p>
+        <ol class="myOL">
+          <li>Copy the URL of your desired WikiPedia Page.</li>
+          <li>Paste the URL in the box above.</li>
+          <li>Click on the submit button.</li>
+          <li>Get the Summary of the WikiPedia Page in an instant</li>
+        </ol>
+      </div>
 
-			<p id="error"></p>
-		</div>
-		<div class="content">
-			<div class="header1">
-				<div class="shortcontent">
-					<div class="page_title">Apple Inc.</div>
-					<div class="flags discription">
-						American multinational technology company
-					</div>
-					<div class="pageurl">
-						<h4 class="flag_title">Page URL |</h4>
-						<div class="flags url">
-							<a
-								class="url_flag"
-								target="_blank"
-								href="https://en.wikipedia.org/wiki/Apple_Inc."
-								>https://en.wikipedia.org/wiki/Apple_Inc.</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="image zoom">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Apple_Park_2022.jpg/320px-Apple_Park_2022.jpg"
-						alt=""
-					/>
-				</div>
-			</div>
-			<div class="extract">
-				<article class="article">
-					<p>
-						<b>Apple Inc.</b> is an American multinational technology company
-						that specializes in consumer electronics, software and online
-						services headquartered in Cupertino, California, United States.
-						Apple is the largest technology company by revenue and, as of June
-						2022, is the world's biggest company by market capitalization, the
-						fourth-largest personal computer vendor by unit sales and
-						second-largest mobile phone manufacturer. It is one of the Big Five
-						American information technology companies, alongside Alphabet,
-						Amazon, Meta, and Microsoft.
-					</p>
-				</article>
-			</div>
-		</div>
-		<div class="footer">
-			<p class="footer-credit">
-				Copyright © 2022 QuickWiKi, All Rights Reserved
-			</p>
-			&nbsp;
-			<div class="github">
-				<p>
-					<a href="https://github.com/kartik3805/QuickWiKi">
-						<i class="fa fa-github" aria-hidden="true"> </i
-					></a>
-				</p>
-			</div>
-		</div>
+      <p id="error"></p>
+    </div>
+    <div class="content">
+      <div class="header1">
+        <div class="shortcontent">
+          <div class="page_title">Apple Inc.</div>
+          <div class="flags discription">
+            American multinational technology company
+          </div>
+          <div class="pageurl">
+            <h4 class="flag_title">Page URL |</h4>
+            <div class="flags url">
+              <a
+                class="url_flag"
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Apple_Inc."
+                >https://en.wikipedia.org/wiki/Apple_Inc.</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="image zoom">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Apple_Park_2022.jpg/320px-Apple_Park_2022.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="extract">
+        <article class="article">
+          <p>
+            <b>Apple Inc.</b> is an American multinational technology company
+            that specializes in consumer electronics, software and online
+            services headquartered in Cupertino, California, United States.
+            Apple is the largest technology company by revenue and, as of June
+            2022, is the world's biggest company by market capitalization, the
+            fourth-largest personal computer vendor by unit sales and
+            second-largest mobile phone manufacturer. It is one of the Big Five
+            American information technology companies, alongside Alphabet,
+            Amazon, Meta, and Microsoft.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-credit">
+        Copyright © 2022 QuickWiki, All Rights Reserved
+      </p>
+      &nbsp;
+      <div class="github">
+        <p>
+          <a href="https://github.com/kartik3805/QuickWiKi">
+            <i class="fa fa-github" aria-hidden="true"> </i
+          ></a>
+        </p>
+      </div>
+    </div>
 
-		<script src="script.js"></script>
-	</body>
+    <script src="script.js"></script>
+  </body>
 </html>
