@@ -58,6 +58,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 1%;
+}
+.f-45{
+	animation: rotate 2s   2  ;
+}
+@keyframes rotate {
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
 }
 
 .footer {
