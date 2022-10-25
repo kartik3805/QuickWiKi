@@ -34,27 +34,14 @@
 			</div>
 			<!-- Alert message badge ends */ -->
 
-			<div class="search">
+			<form class="search">
 				<input type="text" id="url" placeholder="Paste your URL here" />
 				<input
 					id="submitbtn"
 					type="submit"
 					value="Submit"
-					onclick="hideFunction()"
 				/>
-				<script>
-					function hideFunction() {
-						var x = document.getElementById("steps");
-						let n = 0;
-						if (n != 0) {
-							x.style.display = "block";
-						} else {
-							x.style.display = "none";
-							n++;
-						}
-					}
-				</script>
-			</div>
+			</form>
 			<div class="container" id="steps">
 				<!-- <h4>Steps:</h4> -->
 				<p class="moto">

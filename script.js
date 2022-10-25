@@ -2,13 +2,11 @@
 
 const searchBar = document.getElementById("url");
 
-searchBar.addEventListener("keyup", (event) => {
-	if (event.code === "Enter" || event.keyCode === 13) {
-		document.getElementById("submitbtn").click();
-	}
-});
+document.querySelector('.search').addEventListener("submit", function (event) {
+    event.preventDefault();
 
-document.getElementById("submitbtn").addEventListener("click", function () {
+    document.getElementById('steps').style.display = 'none';
+
 	let inputurl = document.getElementById("url").value;
 
 	let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
