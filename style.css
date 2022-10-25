@@ -35,8 +35,11 @@ body {
 	font-size: 1em;
 	width: 30%;
 	padding: 0.6em;
-	border-radius: 1em;
+	border-radius: .7em;
 	border: 0px;
+}
+#url:focus[type="text"]{
+	outline: none;
 }
 
 #submitbtn {
