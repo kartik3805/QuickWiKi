@@ -41,6 +41,14 @@ body {
 #url:focus[type="text"]{
 	outline: none;
 }
+/* code to rotate the 'w' of Wiki */
+.f-45{
+	animation: rotate 3s   infinite;
+}
+@keyframes rotate {
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
 
 #submitbtn {
 	border: 0px;
@@ -63,6 +71,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	letter-spacing: 3px;
+	letter-spacing: 3px;
 }
 
 .footer {
@@ -276,6 +286,8 @@ a:hover {
 }
 .showalert {
 	display: block;
+	background-color: yellow;
+	border-radius: 6px;
 }
 .closebtn {
 	margin-left: 15px;
