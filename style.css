@@ -50,6 +50,10 @@ body {
 	cursor: pointer;
 	margin-left: 0.8em;
 }
+#submitbtn:hover{
+	background-color: wheat;
+	color: black;
+}
 
 .header {
 	background-color: #2c3333;
