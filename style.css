@@ -46,12 +46,16 @@ body {
 	background-color: #395b64;
 	color: #e7f6f2;
 	cursor: pointer;
+
 	margin-left: 0.8em;
 	transition:background-color 500ms linear;
 }
 
 #submitbtn:hover {
 	background-color: #67939f;
+
+	/* margin-left: 0.8em; */
+
 }
 
 .header {
@@ -59,6 +63,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 1em;
 }
 
 .footer {
@@ -72,6 +77,7 @@ body {
 	color: aliceblue;
 	height: 40px;
 	margin-top: auto;
+	padding: 2em;
 }
 
 .github {
