@@ -45,9 +45,12 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 			}
       closethealert()
 
+	
 			document.querySelector(".content").style.display = "block";
 			document.querySelector(".page_title").innerHTML = `${json.title}`;
 			document.querySelector(".discription").innerHTML = `${json.description}`;
+			document.querySelector(".last_edited").innerHTML = new Date(json.timestamp).toLocaleString();
+
 			document.querySelector(
 				".url_flag"
 			).innerHTML = `${json.content_urls.desktop.page}`;
