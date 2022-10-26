@@ -1,7 +1,5 @@
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
-
 const searchBar = document.getElementById("url");
-
 document.querySelector('.search').addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -9,17 +7,18 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 
 	let inputurl = document.getElementById("url").value;
 
+	// filter out the links,special character, symbols and get the name of search
 	let pagetitle = inputurl.replace(/^[^.]+\.wikipedia.org\/wiki\//g, "");
 
+	// check wheather we have links or not 
 	if (pagetitle == "") {
-		// document.getElementById("error").textContent =
-		//       "Please Enter a link!";
 		alertmessage("Please Enter a link!");
-
 		return;
 	}
 
+	// Making API request starts from here 
 	fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + pagetitle)
+	// Check for response status, if 404 (not found) show error and return
 		.then(function (response) {
 			if (response.status === 404) {
 				alertmessage("Error");
@@ -28,6 +27,7 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 			// document.getElementById("error").textContent = "";
 
 			return response.json();
+			// convert to json format and return 
 		})
 		.then(function (json) {
 			console.log(json);
@@ -35,25 +35,17 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 			//so more links will open
 			//example: https://en.wikipedia.org/wiki/Shiv_Smarak
 			try {
-				document.querySelector(
-					".image"
-				).innerHTML = `<img src="${json.thumbnail.source}" alt="">`;
+				document.querySelector(".image").innerHTML = `<img src="${json.thumbnail.source}" alt="">`;
 			} catch (error) {
-				document.querySelector(
-					".image"
-				).innerHTML = `<img src="images/no-thumbnail.jpg" height="320" alt="">`;
+				document.querySelector(".image").innerHTML = `<img src="images/no-thumbnail.jpg" height="320" alt="">`;
 			}
       closethealert()
 
 			document.querySelector(".content").style.display = "block";
 			document.querySelector(".page_title").innerHTML = `${json.title}`;
 			document.querySelector(".discription").innerHTML = `${json.description}`;
-			document.querySelector(
-				".url_flag"
-			).innerHTML = `${json.content_urls.desktop.page}`;
-			document.querySelector(
-				".url_flag"
-			).href = `${json.content_urls.desktop.page}`;
+			document.querySelector(".url_flag").innerHTML = `${json.content_urls.desktop.page}`;
+			document.querySelector(".url_flag").href = `${json.content_urls.desktop.page}`;
 			document.querySelector(".article").innerHTML = `${json.extract_html}`;
 
 			document.querySelector(".content").style.visibility = "visible";
@@ -73,7 +65,7 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 });
 
 // * Changes done by Siddhesh172004 */
-// Alert messgae code starts
+	// Alert messgae code starts
 function alertmessage(message) {
 
 	var showalert = document.getElementById("showalert");
@@ -88,15 +80,13 @@ function alertmessage(message) {
 
 // to close the alert badge starts
 
-function closethealert() {
+function closethealert() { 
 	var showalert = document.getElementById("showalert");
-
-	showalert.classList.remove("showalert");
-	showalert.classList.add("hideit");
+	showalert.classList.toggle("showalert");
+	// showalert.classList.add("hideit");
 }
 // to close the alert badge ends
 
 // Alert messgae code ends
 /* Changes done by Siddhesh172004 */
-
-//https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
+	

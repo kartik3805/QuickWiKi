@@ -64,8 +64,8 @@ body {
 	animation: rotate 2s   2  ;
 }
 @keyframes rotate {
-	from{transform: rotate(0deg);}
-	to{transform: rotate(360deg);}
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(1440deg);}
 }
 
 .footer {
@@ -116,7 +116,7 @@ body {
 
 .content {
 	margin: 1rem auto;
-	width: 70%;
+	width: 70%; 
 }
 
 .page_title {
