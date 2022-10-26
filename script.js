@@ -82,8 +82,8 @@ function alertmessage(message) {
 
 function closethealert() { 
 	var showalert = document.getElementById("showalert");
-	showalert.classList.toggle("showalert");
-	// showalert.classList.add("hideit");
+	showalert.classList.remove("showalert");
+	showalert.classList.add("hideit");
 }
 // to close the alert badge ends
 

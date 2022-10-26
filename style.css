@@ -33,12 +33,19 @@ body {
 .search {
 	padding: 1em;
 }
-#url {
+#url{
+	background-color: rgba(93, 101, 124, 0.253);
 	font-size: 1em;
 	width: 30%;
 	padding: 0.6em;
 	border-radius: 1em;
 	border: 0px;
+}
+input{
+	border: 19px solid black;
+}
+input[type="text"]:focus{
+	outline: none;
 }
 
 #submitbtn {
@@ -130,22 +137,25 @@ body {
 }
 
 .flags {
-	background-color: #a5c9ca;
+	background-color: #a558443f;
 	border-radius: 0.4rem;
 	padding: 0.5rem;
 }
 
 .flag_title {
-	background-color: #395b64;
+	background-color: #2559688e;
 	color: #e7f6f2;
 	border-radius: 0.4em;
 	padding: 0.5em;
 	flex: 1;
+	text-align: center;
 }
 
 .container {
 	text-align: center;
 	padding: 0 35px;
+
+
 }
 
 .center-container {
@@ -162,12 +172,15 @@ ol.myOL {
 }
 
 .discription {
+	text-align: center;
 	margin: 0.3rem;
 }
 
 .url_flag {
+	margin-top: 2%;
 	text-decoration: none;
 	color: #395b64;
+	display: none;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -232,6 +245,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
+	body{
+		background-position: center;
+	}
 	.content {
 		margin: 1rem auto;
 		width: 90%;
@@ -245,6 +261,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+	body{
+		background-position: center;
+	}
 	#url {
 		width: 40%;
 		margin-bottom: 0.5rem;
@@ -252,6 +271,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 450px) {
+	body{
+		background-position: center;
+	}
 	.search {
 		flex-direction: column;
 	}
