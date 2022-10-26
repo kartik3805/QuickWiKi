@@ -41,9 +41,7 @@ body {
 	border-radius: 1em;
 	border: 0px;
 }
-input{
-	border: 19px solid black;
-}
+
 input[type="text"]:focus{
 	outline: none;
 }
@@ -58,6 +56,12 @@ input[type="text"]:focus{
 	color: #e7f6f2;
 	cursor: pointer;
 	margin-left: 0.8em;
+}
+#submitbtn:hover{
+	/* color: #395b64;
+	background-color: wheat; */
+	font-style: italic;
+	font-weight: bolder;
 }
 
 .header {
