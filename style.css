@@ -143,6 +143,7 @@ input[type="text"]:focus{
 }
 
 .flag_title {
+	cursor: pointer;
 	background-color: #2559688e;
 	color: #e7f6f2;
 	border-radius: 0.4em;
@@ -177,10 +178,9 @@ ol.myOL {
 }
 
 .url_flag {
-	margin-top: 2%;
-	text-decoration: none;
+	text-align: center;
 	color: #395b64;
-	display: none;
+	/* display: none; */
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -213,8 +213,8 @@ ol.myOL {
 }
 
 .shortcontent {
-	background-color: #e7f6f2;
-	margin: 0.3rem;
+	background-color: #339b7f44;
+	margin: rem;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
 	flex: 1;

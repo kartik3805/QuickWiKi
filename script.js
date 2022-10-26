@@ -44,7 +44,7 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 			document.querySelector(".content").style.display = "block";
 			document.querySelector(".page_title").innerHTML = `${json.title}`;
 			document.querySelector(".discription").innerHTML = `${json.description}`;
-			document.querySelector(".url_flag").innerHTML = `${json.content_urls.desktop.page}`;
+			document.querySelector(".url_flag").href = `${json.content_urls.desktop.page}`;
 			document.querySelector(".url_flag").href = `${json.content_urls.desktop.page}`;
 			document.querySelector(".article").innerHTML = `${json.extract_html}`;
 
