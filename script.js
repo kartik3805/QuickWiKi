@@ -14,7 +14,7 @@ document.querySelector('.search').addEventListener("submit", function (event) {
 	if (pagetitle == "") {
 		// document.getElementById("error").textContent =
 		//       "Please Enter a link!";
-		alertmessage("Please Enter a link!");
+		alertmessage("Please Enter a link/topic!");
 
 		return;
 	}
