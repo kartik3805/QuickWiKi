@@ -103,3 +103,17 @@ function closethealert() {
 /* Changes done by Siddhesh172004 */
 
 //https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_
+
+
+{/* <script> */}
+function toggle_light_mode() {
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+	localStorage.lightMode = "light";
+	app.setAttribute("light-mode", "light");
+    } else {
+	localStorage.lightMode = "dark";
+	app.setAttribute("light-mode", "dark");
+    }		
+}
+// </script>
